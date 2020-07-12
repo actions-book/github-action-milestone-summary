@@ -1,0 +1,12 @@
+name: Milestone Summary
+description: Get a regular summary of any PR milestones that have been hit in your repo
+runs:
+  using: docker
+  image: Dockerfile
+branding:
+  icon: paperclip
+  color: green
+inputs:
+  since:
+    description: "How far back to search for closed PRs in ISO8601 Duration format"
+    required: true
